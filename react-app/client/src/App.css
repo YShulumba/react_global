@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.info,
+.create-element {
+	text-align: center;
+}
+
+.textField {
+	padding: 10px 20px;
+	width: 500px;
+	max-width: 100%;
+}
+
+.list {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	max-width: 500px;
+}
+
+.list__item {
+	padding: 10px 20px;
+}
+
+.list__item:nth-child(even) {
+	background-color: #ccc;
+}
+
+.info h4 {
+	font-size: 14px;
+	font-weight: normal;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
