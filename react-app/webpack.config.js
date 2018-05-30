@@ -33,19 +33,12 @@ module.exports = function(env) {
 					}
 				},
 				{
-					test: /\.css$/,
+					test: /\.s?css$/,
+					exclude: /node_modules/,
 					use: [
-						{
-							loader: 'style-loader'
-						},
-						{
-							loader: 'css-loader',
-							options: {
-								modules: true,
-								camelCase: true,
-								sourceMap: true
-							}
-						}
+						'style-loader',
+						{ loader: 'css-loader', options: { importLoaders: 1 } },
+						'postcss-loader'
 					]
 				}
 			]

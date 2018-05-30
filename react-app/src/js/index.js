@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Link from './components/Link';
+import App from './components/app';
+import styles from '../css/app.scss';
 
-ReactDOM.render(<Link page="http://www.facebook.com">Click Me</Link>, document.getElementById('root'));
+ReactDOM.render(<App view="startPage"></App>, document.getElementById('app'));
