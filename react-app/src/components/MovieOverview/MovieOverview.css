@@ -1,0 +1,33 @@
+.movie {
+    overflow: hidden;
+}
+
+.movieCover {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.movieInfo {
+    overflow: hidden;
+}
+
+.movieTitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.movieNote {
+    display: block;
+    margin: 0 0 10px;
+}
+
+.movieYear {
+    display: block;
+    margin: 0 0 10px;
+}
+
+.movieDuration {
+    display: block;
+    margin: 0 0 10px;
+}

@@ -1,0 +1,54 @@
+.movies {
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.moviesList {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.moviesItem {
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.moviesItemCover {
+    display: block;
+    max-width: 100%;
+}
+
+.moviesItemLink {
+    display: block;
+    color: inherit;
+}
+
+.moviesItemAbout {
+
+}
+
+.moviesItemYear {
+
+}
+
+.moviesItemTitle {
+
+}
+
+.moviesItemGenre {
+
+}
