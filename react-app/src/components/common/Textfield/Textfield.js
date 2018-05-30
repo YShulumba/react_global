@@ -1,9 +1,8 @@
 import React from 'react';
-import Aux from '../../../hoc/Aux';
 import styles from './Textfield.css';
 
 const Textfield = (props) => (
-    <Aux>
+    <div>
         <label htmlFor={`${props.id}Field`} className={styles.textfieldLabel}>{props.label}</label>
         <input 
             className={styles.textfield} 
@@ -12,7 +11,7 @@ const Textfield = (props) => (
             onChange={props.change} 
             onKeyPress={props.keypress}
             placeholder={props.placeholder} />
-    </Aux>
+    </div>
 )
 
 export default Textfield;

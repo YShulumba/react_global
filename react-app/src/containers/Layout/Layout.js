@@ -1,5 +1,4 @@
 import React from 'react';
-import Aux from '../../hoc/Aux';
 import Header from '../../components/Header/Header';
 import Movies from '../../components/Movies/Movies';
 import Footer from '../../components/Footer/Footer';
@@ -93,7 +92,7 @@ export default class Layout extends React.Component {
 
     render() {
         return (
-            <Aux>
+            <div>
                 <Header 
                     movies={this.state.moviesList} 
                     action={this.search}
@@ -111,7 +110,7 @@ export default class Layout extends React.Component {
                 </main>
 
                 <Footer />
-            </Aux>
+            </div>
         );
     }
 }
