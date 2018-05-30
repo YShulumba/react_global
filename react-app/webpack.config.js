@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const htmlWebpackPlugin = new HtmlWebPackPlugin({
-	template: "./src/index.html",
+	template: "./public/index.html",
 	filename: "./index.html"
 });
 
@@ -17,7 +17,7 @@ const uglifyJsPlugin = new UglifyJsPlugin({
 module.exports = function(env) {
 	const isProduction = env.NODE_ENV == "production";
 	let config = {
-		entry: "./src/js/index.js",
+		entry: "./src/index.js",
 		devtool: isProduction ? "source-map" : "eval",
 		output: {
 			filename: 'bundle.js',
@@ -33,12 +33,19 @@ module.exports = function(env) {
 					}
 				},
 				{
-					test: /\.s?css$/,
-					exclude: /node_modules/,
+					test: /\.css$/,
 					use: [
-						'style-loader',
-						{ loader: 'css-loader', options: { importLoaders: 1 } },
-						'postcss-loader'
+						{
+							loader: 'style-loader'
+						},
+						{
+							loader: 'css-loader',
+							options: {
+								modules: true,
+								camelCase: true,
+								sourceMap: true
+							}
+						}
 					]
 				}
 			]
@@ -51,4 +58,3 @@ module.exports = function(env) {
 	};
 	return config;
 };
-

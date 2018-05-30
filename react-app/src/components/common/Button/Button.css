@@ -1,0 +1,27 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    background: #ccc;
+    border: none;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #333;
+}
+
+.btn.red {
+    background: red;
+    color: #fff;
+}
+
+.btn.small {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+}
+
+.btn.pullRight {
+    float: right;
+}
